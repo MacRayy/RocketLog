@@ -14,7 +14,7 @@
     "gen-types": "curl https://api.spacexdata.com/v4/launches | npx quicktype -o src/types/generated/launches.ts --just-types --lang typescript\n curl https://api.spacexdata.com/v4/payloads | npx quicktype -o src/types/generated/payload.ts --just-types --lang typescript\n"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^1.9.6",
+    "@reduxjs/toolkit": "^2.5.1",
     "rc-pagination": "^5.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
