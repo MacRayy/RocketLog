@@ -65,17 +65,19 @@ export const Launches = () => {
       <Styled.Grid>
         {paginatedLaunches ? (
           paginatedLaunches.map(launch => (
-            <NavLink to={`/details/${launch.id}`} key={launch.id}>
-              <Card
-                title={launch.name}
-                coverImage={launch.links.patch.small ?? undefined}
-                date={launch.date_utc}
-                crewSize={launch.crew.length}
-                payloadCount={launch.payloads.length}
-                isSuccessful={!!launch.success}
-                isLoading={isLaunchLoading}
-              />
-            </NavLink>
+            <li key={launch.id}>
+              <NavLink to={`/details/${launch.id}`}>
+                <Card
+                  title={launch.name}
+                  coverImage={launch.links.patch.small ?? undefined}
+                  date={launch.date_utc}
+                  crewSize={launch.crew.length}
+                  payloadCount={launch.payloads.length}
+                  isSuccessful={!!launch.success}
+                  isLoading={isLaunchLoading}
+                />
+              </NavLink>
+            </li>
           ))
         ) : (
           <Card title="No launches found" />
