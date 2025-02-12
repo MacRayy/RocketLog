@@ -1,14 +1,8 @@
 {
-  "name": "marshmallow-frontend-test",
+  "name": "rocket-log",
   "private": true,
   "version": "1.0.0",
-  "author": "Liam Canetti <liam.canettti@marshmallow.co>",
-  "contributors": [
-    "Ella Taylor <ella.taylor@marshmallow.co>",
-    "Liam Piesley <liam.piesley@marshmallow.co>",
-    "Rowan Henseleit <rowan.henseleit@marshmallow.co>",
-    "Mat Diak <mat.diak@marshmallow.co>"
-  ],
+  "description": "A SpaceX launch tracker",
   "type": "module",
   "scripts": {
     "dev": "vite",
