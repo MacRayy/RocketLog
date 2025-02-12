@@ -30,6 +30,10 @@
 			"@services/*": ["src/services/*"]
 		}
 	},
-	"include": ["src"],
+	"include": [
+		"src",
+		"e2e-tests/**/*",
+		"playwright.config.ts"
+	],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }
