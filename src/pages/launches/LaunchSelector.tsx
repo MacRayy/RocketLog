@@ -1,4 +1,5 @@
 import * as Styled from '@pages/launches/Launches.styles'
+import type { ActionMeta } from 'react-select'
 
 type Props = {
   selectedNationality: string | null
@@ -24,7 +25,8 @@ export const LaunchSelector = ({
       ...nationalities.map(nationality => ({ value: nationality, label: nationality })),
     ]}
     value={{ value: selectedNationality, label: selectedNationality ?? 'Every launch' }}
-    onChange={(option: OptionType | null) => {
+    onChange={(newValue: unknown, _: ActionMeta<unknown>) => {
+      const option = newValue as OptionType
       setSelectedNationality(option?.value ?? null)
       setCurrentPage(1)
     }}
