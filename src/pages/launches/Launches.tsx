@@ -42,7 +42,12 @@ export const Launches = () => {
   return (
     <Page
       title={
-        <Styled.Title onClick={() => setSelectedNationality(null)}>
+        <Styled.Title
+          onClick={() => {
+            setSelectedNationality(null)
+            setCurrentPage(1)
+          }}
+        >
           Space X latest launches
         </Styled.Title>
       }
