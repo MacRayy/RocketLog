@@ -10,7 +10,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts'],
+  ignorePatterns: ['dist', '.eslintrc.cjs', 'vite.config.ts', 'generated'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     'tsconfigRootDir': './',
