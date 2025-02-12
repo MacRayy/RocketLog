@@ -1,2 +1,4 @@
 # RocketLog
-A small app the list the SpaceX rocket launches
+
+A small app that list the SpaceX rocket launches.
+
